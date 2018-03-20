@@ -32,7 +32,7 @@
             </div><!--.col-2-->
         </div><!-- wrapper -->
     </div><!--.row-1-->
-    <div class="row-2">
+    <div class="row-2" style="background-image: url(<?php echo get_template_directory_uri()."/images/water.jpg";?>)">
         <div class="wrapper">
             <?php $row_2_copy = get_field("row_2_copy");
             $row_2_title = get_field("row_2_title");
@@ -103,7 +103,7 @@
             </div><!--.row-2-->
         </div><!-- wrapper -->
     </div><!--.row-3-->
-    <div class="row-4">
+    <div class="row-4" style="background-image: url(<?php echo get_template_directory_uri()."/images/water.jpg";?>)">
         <div class="wrapper">
             <?php $row_4_copy = get_field("row_4_copy");?>
             <div class="copy">

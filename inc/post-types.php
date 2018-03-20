@@ -8,18 +8,18 @@ function js_custom_init()
 	// Register the Homepage Slides
   
      $labels = array(
-	'name' => _x('Slides', 'post type general name'),
-    'singular_name' => _x('Slide', 'post type singular name'),
-    'add_new' => _x('Add New', 'Slide'),
-    'add_new_item' => __('Add New Slide'),
-    'edit_item' => __('Edit Slides'),
-    'new_item' => __('New Slide'),
-    'view_item' => __('View Slides'),
-    'search_items' => __('Search Slides'),
-    'not_found' =>  __('No Slides found'),
-    'not_found_in_trash' => __('No Slides found in Trash'), 
+	'name' => _x('Books', 'post type general name'),
+    'singular_name' => _x('Book', 'post type singular name'),
+    'add_new' => _x('Add New', 'Book'),
+    'add_new_item' => __('Add New Book'),
+    'edit_item' => __('Edit Book'),
+    'new_item' => __('New Book'),
+    'view_item' => __('View Book'),
+    'search_items' => __('Search Books'),
+    'not_found' =>  __('No Books found'),
+    'not_found_in_trash' => __('No Books found in Trash'), 
     'parent_item_colon' => '',
-    'menu_name' => 'Slides'
+    'menu_name' => 'Books'
   );
   $args = array(
 	'labels' => $labels,
@@ -33,10 +33,10 @@ function js_custom_init()
     'has_archive' => false, 
     'hierarchical' => false, // 'false' acts like posts 'true' acts like pages
     'menu_position' => 20,
-    'supports' => array('title','editor','custom-fields','thumbnail'),
+    'supports' => array('title','excerpt','editor','custom-fields','thumbnail'),
 	
   ); 
-  register_post_type('slide',$args); // name used in query
+  register_post_type('book',$args); // name used in query
   
   // Add more between here
   

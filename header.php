@@ -25,11 +25,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="row-1">
+		<div class="row-1" style="background-image: url(<?php echo get_template_directory_uri()."/images/water-2.jpg";?>)">
 			<div class="wrapper">
 				<div class="social">
-					<?php $facebook = get_field("facebook");
-					$youtube = get_field("youtube");
+					<?php $facebook = get_field("facebook","option");
+					$youtube = get_field("youtube","option");
 					if($facebook):?>
 						<a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a>
 					<?php endif;

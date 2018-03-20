@@ -15,8 +15,8 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="social row-1">
-			<?php $facebook = get_field("facebook");
-			$youtube = get_field("youtube");
+			<?php $facebook = get_field("facebook","option");
+			$youtube = get_field("youtube","option");
 			if($facebook):?>
 				<a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a>
 			<?php endif;
@@ -26,11 +26,11 @@
 		</div><!--.social-->
 		<div class="row-2">
 			<div class="col-1">
-				<?php $footer_col_1_title = get_field("footer_col_1_title");
+				<?php $footer_col_1_title = get_field("footer_col_1_title","option");
 				if($footer_col_1_title):?>
 					<h2><?php $footer_col_1_title;?></h2>
 				<?php endif;
-				$footer_col_1_books = get_field("footer_col_1_books");
+				$footer_col_1_books = get_field("footer_col_1_books","option");
 				if($footer_col_1_books):?>
 					<ul>
 						<?php foreach($footer_col_1_books as $book):
@@ -44,13 +44,13 @@
 						endforeach;?>
 					</ul>
 				<?php endif;
-				$footer_col_1_title_2 = get_field("footer_col_1_title_2");
+				$footer_col_1_title_2 = get_field("footer_col_1_title_2","option");
 				if($footer_col_1_title_2):?>
 					<h2 class="two"><?php $footer_col_1_title_2;?></h2>
 				<?php endif;?>
 			</div><!--.col-1-->
 			<div class="col-2">
-				<?php $footer_col_2_title = get_field("footer_col_2_title");
+				<?php $footer_col_2_title = get_field("footer_col_2_title","option");
 				if($footer_col_2_title):?>
 					<h2><?php $footer_col_2_title;?></h2>
 				<?php endif;?>
