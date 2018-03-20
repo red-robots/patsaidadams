@@ -26,39 +26,41 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="row-1" style="background-image: url(<?php echo get_template_directory_uri()."/images/water-2.jpg";?>)">
-			<div class="wrapper">
+			<div class="wrapper cap">
 				<div class="social">
 					<?php $facebook = get_field("facebook","option");
 					$youtube = get_field("youtube","option");
+					$email = get_field("email","option");
 					if($facebook):?>
 						<a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a>
 					<?php endif;
 					if($youtube):?>
 						<a href="<?php echo $youtube;?>"><i class="fa fa-youtube"></i></a>
+					<?php endif;
+					if($email):?>
+						<a href="mailto:<?php echo $email;?>"><i class="fa fa-envelope"></i></a>
 					<?php endif;?>
 				</div><!--.social-->
 			</div><!-- wrapper -->
 		</div><!--.row-1-->
 		<div class="row-2">
-			<div class="wrapper">
+			<div class="wrapper cap">
 				<?php if(is_home()) { ?>
 					<h1 class="logo">
-					<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 					</h1>
 				<?php } else { ?>
 					<div class="logo">
-					<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 					</div>
 				<?php } ?>
 			</div><!-- wrapper -->
 		</div><!--.row-2-->
 		<div class="row-3">
-			<div class="wrapper">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- wrapper -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'MENU', 'acstarter' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 		</div><!--.row-3-->
 	</header><!-- #masthead -->
 

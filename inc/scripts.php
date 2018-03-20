@@ -26,7 +26,7 @@ function acstarter_scripts() {
 		);
 	wp_enqueue_script( 
 			'font-awesome', 
-			get_template_directory_uri() . 'https://use.fontawesome.com/8f931eabc1.js', 
+			'https://use.fontawesome.com/8f931eabc1.js', 
 			array(), '20180320'
 		);
 

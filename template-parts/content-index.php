@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-index"); ?>>
     <div class="row-1">
-        <div class="wrapper">
+        <div class="wrapper cap">
             <?php $pat_photo = get_field("pat_photo");?>
             <div class="col-1">
                 <?php if($pat_photo):?>
@@ -33,7 +33,7 @@
         </div><!-- wrapper -->
     </div><!--.row-1-->
     <div class="row-2" style="background-image: url(<?php echo get_template_directory_uri()."/images/water.jpg";?>)">
-        <div class="wrapper">
+        <div class="wrapper cap">
             <?php $row_2_copy = get_field("row_2_copy");
             $row_2_title = get_field("row_2_title");
             if($row_2_title):?>
@@ -56,7 +56,7 @@
         </div><!-- wrapper -->
     </div><!--.row-2-->
     <div class="row-3">
-        <div class="wrapper">
+        <div class="wrapper cap">
             <div class="row-1">
                 <?php $args = array(
                     'post_type'=>'post',
@@ -104,29 +104,46 @@
         </div><!-- wrapper -->
     </div><!--.row-3-->
     <div class="row-4" style="background-image: url(<?php echo get_template_directory_uri()."/images/water.jpg";?>)">
-        <div class="wrapper">
+        <div class="wrapper cap">
             <?php $row_4_copy = get_field("row_4_copy");?>
             <div class="copy">
                 <?php echo $row_4_copy;?>
             </div><!--.copy-->
         </div><!-- wrapper -->
     </div><!--.row-4-->
-    <div class="row-5">
-        <div class="wrapper">
-            <ul class='tabs'>
-                <li><a href='#tab1'>Tab 1</a></li>
-                <li><a href='#tab2'>Tab 2</a></li>
-                <li><a href='#tab3'>Tab 3</a></li>
-            </ul>
-            <div id='tab1'>
-                <p>Hi, this is the first tab.</p>
-            </div>
-            <div id='tab2'>
-                <p>This is the 2nd tab.</p>
-            </div>
-            <div id='tab3'>
-                <p>And this is the 3rd tab.</p>
-            </div>
-        </div><!-- wrapper -->
-    </div><!--.row-5-->
+    <?php $books = get_field("books");
+    if($books):?>
+        <div class="row-5">
+            <div class="wrapper cap">
+                <ul class='tabs'>
+                    <?php foreach($books as $book):?>
+                        <li><a href='#<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($book->post_title)));?>'><?php echo $book->post_title;?></a></li>
+                    <?php endforeach;?>
+                </ul>
+                <?php foreach($books as $book):
+                    $post = get_post($book->ID);
+                    setup_postdata($post);
+                    $image = get_field("image");
+                    $button_text = get_field("button_text");
+                    $button_link = get_field("button_link");?>
+                    <div id='<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($book->post_title)));?>'>
+                        <div class="col-1">
+                            <?php if($image):?>
+                                <img src="<?php echo $image['url'];?>" alt="<?php echo $image['alt'];?>">
+                            <?php endif;?>
+                            <?php if($button_link&&$button_text):?>
+                                <a href="<?php echo $button_link;?>">
+                                    <?php echo $button_text;?>
+                                </a>
+                            <?php endif;?>
+                        </div><!--.col-1-->
+                        <div class="col-2">
+                            <?php the_content();?>
+                        </div><!--.col-2-->
+                    </div>
+                <?php endforeach;
+                wp_reset_postdata();?>
+            </div><!-- wrapper -->
+        </div><!--.row-5-->
+    <?php endif;?>
 </article><!-- #post-## -->
