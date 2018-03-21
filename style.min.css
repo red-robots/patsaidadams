@@ -905,7 +905,22 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 .template-category>.wrapper>.col-2>.row-2>ul li a{font-size:20px;text-decoration:none;color:black}
 @media screen and (min-width:600px){.template-category>.wrapper>.col-2>.row-2>ul li a{font-size:25px}
 }.template-category>.wrapper>.col-2>.row-2>ul li ul{margin:0;padding:0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.template-books>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-books>.wrapper{padding:4% 0}
+}.template-books>.wrapper header.row-1 h1{margin:0;font-size:20px;color:#152e4e}
+@media screen and (min-width:600px){.template-books>.wrapper header.row-1 h1{font-size:25px}
+}.template-books>.wrapper>.row-2 article.book{padding:30px 0 20px 0;border-bottom:10px solid #e2e2e2}
+@media screen and (min-width:600px){.template-books>.wrapper>.row-2 article.book{padding:3% 0 2.5% 0}
+}.template-books>.wrapper>.row-2 article.book>.col-1{text-align:center}
+@media screen and (min-width:600px){.template-books>.wrapper>.row-2 article.book>.col-1{float:left;width:28%;padding:0 4% 0 0}
+}.template-books>.wrapper>.row-2 article.book>.col-1 img{width:100%;display:block}
+.template-books>.wrapper>.row-2 article.book>.col-1 a.button{display:inline-block;margin:30px 0 0 0;font-size:18px;padding:5px 25px}
+.template-books>.wrapper>.row-2 article.book>.col-2{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-books>.wrapper>.row-2 article.book>.col-2{float:left;width:72%;margin:0}
+}.template-books>.wrapper>.row-2 article.book>.col-2 header{margin:0 0 15px 0}
+.template-books>.wrapper>.row-2 article.book>.col-2 header h2{margin:0;font-size:20px;color:#152e4e}
+@media screen and (min-width:600px){.template-books>.wrapper>.row-2 article.book>.col-2 header h2{font-size:25px}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}

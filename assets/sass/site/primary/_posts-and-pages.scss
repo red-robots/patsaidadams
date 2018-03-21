@@ -536,3 +536,72 @@
         }
     }
 }
+
+.template-books {
+    >.wrapper {
+        padding: 20px 0;
+        @media screen and (min-width: $tabwidth){
+            padding: 4% 0;
+        }
+        header.row-1 {
+            h1 {
+                margin: 0;
+                font-size: 20px;
+                color: $color__psa-blue;
+                @media screen and (min-width: $tabwidth){
+                    font-size: 25px;
+                }
+
+            }
+        }
+        >.row-2 {
+            article.book {
+                padding: 30px 0 20px 0;
+                border-bottom: 10px solid $color__psa-medium-grey;
+                @media screen and (min-width: $tabwidth){
+                    padding: 3% 0 2.5% 0;
+                }
+                >.col-1 {
+                    text-align: center;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 28%;
+                        padding: 0 4% 0 0;
+                    }
+                    img {
+                        width: 100%;
+                        display: block;
+                    }
+                    a.button {
+                        display: inline-block;
+                        margin: 30px 0 0 0;
+                        font-size: 18px;
+                        padding: 5px 25px;
+                    }
+                }
+                >.col-2 {
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $tabwidth){
+                        float: left;
+                        width: 72%;
+                        margin: 0;
+                    }
+                    header {
+                        margin: 0 0 15px 0;
+                        h2 {
+                            margin: 0;
+                            font-size: 20px;
+                            color: $color__psa-blue;
+                            @media screen and (min-width: $tabwidth){
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                    .copy {
+
+                    }
+                }
+            }
+        }
+    }
+}
