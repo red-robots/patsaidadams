@@ -2,9 +2,7 @@
 -------------------------------------------------------------- */
 .navigation {
 	width: 100%;
-	margin: 20px 0 30px 0;
-	clear: both;
-	float: left;
+	margin: 0;
 
 	& ul {
 		margin: 0;
@@ -13,8 +11,11 @@
 
 	& li {
 		margin: 0;
-		display: inline;
+		display: inline-block;
 		list-style: none;
+	}
+	a {
+		display: block;
 	}
 }
 .navigation li a,
@@ -29,7 +30,7 @@
 .navigation li a:hover,
 .navigation li.active a,
 .navigation li.disabled {
-	background-color: #FAD827;
+	background-color: $color__psa-light-gold;
 	border-radius: 3px;
 	cursor: pointer;
 	padding: 12px;
@@ -39,5 +40,5 @@
  
 .navigation li a:hover,
 .navigation li.active a {
-	background-color: #F47A21;
+	background-color: $color__psa-gold;
 }

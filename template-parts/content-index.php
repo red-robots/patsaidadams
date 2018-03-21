@@ -101,9 +101,11 @@
             $row_3_button_text = get_field("row_3_button_text");
             if($row_3_button_link&&$row_3_button_text):?>
                 <div class="row-2">
-                    <a href="<?php echo $row_3_button_link;?>">
-                        <?php echo $row_3_button_text;?>
-                    </a><!--.button-->
+                    <div class="button-wrapper">
+                        <a href="<?php echo $row_3_button_link;?>">
+                            <?php echo $row_3_button_text;?>
+                        </a><!--.button-->
+                    </div><!--.button-wrapper-->
                 </div><!--.row-2-->
             <?php endif;?>
         </div><!-- wrapper -->

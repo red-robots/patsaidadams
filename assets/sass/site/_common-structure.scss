@@ -314,6 +314,11 @@ a.button {
 	text-decoration: none;
 	text-align: center;
 	@media screen and (min-width: $tabwidth){
+		font-size: 18px;
+		padding: 10px 20px;
+	}
+	@media screen and (min-width: $deskwidth){
 		font-size: 28px;
+		padding: 10px 50px;
 	}
 }
