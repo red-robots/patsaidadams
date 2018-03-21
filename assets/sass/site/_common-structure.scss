@@ -4,8 +4,8 @@
 	padding-left: 20px !important;
 	margin: 0 auto;
 	@media screen and (min-width: $midwidth){
-		padding-right: 4% !important;
-		padding-left: 4% !important;
+		padding-right: 8% !important;
+		padding-left: 8% !important;
 	}
 }
 .clear-bottom {
@@ -141,23 +141,47 @@
 		background: linear-gradient(to right, $color__psa-blue, $color__psa-light-blue); /* Standard syntax */
 		#site-navigation {
 			text-align: center;
+			padding: 20px 0 0 0;
+			@media screen and (min-width: $tabwidth){
+				padding: 0;
+			}
+			&.toggled {
+				>div {
+					display: block;
+				}
+			}
 			button {
 				display: inline-block;
+				margin: 0 0 20px 0;
+				box-shadow: none;
+				border: none;
+				color: $color__psa-blue;
+				background-color: white;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				text-align: center;
+				text-shadow: none;
+				border-radius: 0;
+				font-size: 20px;
 				@media screen and (min-width: $tabwidth){
 					display: none;
 				}
 			}
 			>div {
+				display: none;
+				@media screen and (min-width: $tabwidth){
+					display: block;
+				}
 				ul {
 					margin: 0;
-					padding: 0;
+					padding: 0 0 20px 0;
 					margin: 0 auto;
 					@media screen and (min-width: $tabwidth){
 						display: table;
+						padding: 0;
 					}
 					li {
 						display: block;
-						float: left;
 						list-style-type: none;
 						@media screen and (min-width: $tabwidth){
 							display: table-cell;
@@ -268,4 +292,19 @@
 			padding: 20px 0 0 0;
 		}
 	}
+}
+
+a.button {
+	background: $color__psa-gold; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, $color__psa-gold , $color__psa-light-gold); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, $color__psa-gold, $color__psa-light-gold); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, $color__psa-gold, $color__psa-light-gold); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, $color__psa-gold, $color__psa-light-gold); /* Standard syntax */
+	color: white;
+	text-transform: uppercase;
+	font-size: 28px;
+	padding: 10px 50px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
 }
