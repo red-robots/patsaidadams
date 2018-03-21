@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:black;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -723,23 +723,25 @@ html[xmlns] .flexslider .slides{display:block}
 .cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
 @media screen and (min-width:900px){.cap{padding-right:8% !important;padding-left:8% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
-.copy{font-size:14px;color:#404040}
-@media screen and (min-width:600px){.copy{font-size:16px}
+.copy{font-size:16px;color:black;line-height:1.6}
+@media screen and (min-width:600px){.copy{font-size:18px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:#404040;position:relative}
-.copy a:hover{color:#404040;text-decoration:underline}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#404040}
-.copy h1{font-size:30px}
-.copy h2{font-size:25px}
-.copy h3{font-size:20px}
+.copy a{text-decoration:none;color:black;position:relative}
+.copy a:hover{color:black;text-decoration:underline}
+.copy h1,.copy h2,.copy h3{margin:0 0 20px 0;color:#152e4e}
+.copy h1{font-size:25px}
+@media screen and (min-width:600px){.copy h1{font-size:35px}
+}.copy h2{font-size:20px}
+@media screen and (min-width:600px){.copy h2{font-size:25px}
+}.copy h3{font-size:20px}
 .copy>ul,.copy>ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy>ul li,.copy>ol li{margin:0;font-size:inherit;padding:0;list-style-type:none;text-indent:-14px}
-.copy>ul li:before,.copy>ol li:before{content:"\25A0";color:#404040;margin-right:5px}
+.copy>ul li:before,.copy>ol li:before{content:"\25A0";color:black;margin-right:5px}
 .copy>ul li a,.copy>ol li a{cursor:pointer}
-.copy>ul li a:hover,.copy>ol li a:hover{color:#404040}
+.copy>ul li a:hover,.copy>ol li a:hover{color:black}
 .copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
 #masthead>.row-1{background-size:cover;background-position:center}
 #masthead>.row-1>.wrapper{padding:10px 0}
@@ -784,8 +786,9 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.row-2>.wrapper>.col-1 ul li:last-child,#colophon>.row-2>.wrapper>.col-2 ul li:last-child{margin-bottom:0}
 #colophon>.row-2>.wrapper>.col-1 ul li a,#colophon>.row-2>.wrapper>.col-2 ul li a{text-decoration:none;font-size:20px;color:gray}
 #colophon>.row-3>.wrapper{text-align:center;font-size:16px;color:white;padding:20px 0 0 0}
-a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb669);background:linear-gradient(to right,#ce8767,#cfb669);color:white;text-transform:uppercase;font-size:28px;padding:10px 50px;display:block;text-decoration:none;text-align:center}
-.template-index>.row-1>.wrapper{padding:20px 0}
+a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb669);background:linear-gradient(to right,#ce8767,#cfb669);color:white;text-transform:uppercase;font-size:20px;padding:10px 50px;display:block;text-decoration:none;text-align:center}
+@media screen and (min-width:600px){a.button{font-size:28px}
+}.template-index>.row-1>.wrapper{padding:20px 0}
 @media screen and (min-width:600px){.template-index>.row-1>.wrapper{padding:7% 0 5% 0}
 }@media screen and (min-width:600px){.template-index>.row-1>.wrapper>.col-1{float:left;width:40%;padding:0 11% 0 0}
 }.template-index>.row-1>.wrapper>.col-1 img{width:100%;display:block}
@@ -818,8 +821,8 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 .template-index>.row-3>.wrapper>.row-1 .col>.wrapper{margin:auto 0 0 0;padding:0 10px}
 .template-index>.row-3>.wrapper>.row-2{padding:0 0 20px 0;text-align:center}
 @media screen and (min-width:600px){.template-index>.row-3>.wrapper>.row-2{padding:0 0 6% 0}
-}.template-index>.row-3>.wrapper>.row-2 a{display:inline-block;border:1px solid #cfb669;color:#763b1d;background-color:white;padding:10px 50px;text-decoration:none;text-transform:uppercase;font-size:28px}
-@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.row-2 a{min-width:40%;margin:0 auto}
+}.template-index>.row-3>.wrapper>.row-2 a{display:inline-block;border:1px solid #cfb669;color:#763b1d;background-color:white;padding:10px 50px;text-decoration:none;text-transform:uppercase;font-size:20px}
+@media screen and (min-width:600px){.template-index>.row-3>.wrapper>.row-2 a{min-width:40%;margin:0 auto;font-size:28px}
 }.template-index>.row-4{background-position:center;background-size:cover;position:relative}
 .template-index>.row-4>.wrapper{padding:8% 0}
 @media screen and (min-width:600px){.template-index>.row-4>.wrapper{padding:8% 0 12% 0}
@@ -841,6 +844,18 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 .template-index>.row-5>.wrapper .tab>.col-1 a.button{margin:50px 0 0 0}
 .template-index>.row-5>.wrapper .tab>.col-2{margin:20px 0 0 0;font-size:20px}
 @media screen and (min-width:600px){.template-index>.row-5>.wrapper .tab>.col-2{float:left;font-size:25px;width:62%;margin:0}
+}.template-blog>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-blog>.wrapper{padding:4% 0}
+}.template-blog>.wrapper header h1{margin:0;font-size:20px;color:#152e4e}
+@media screen and (min-width:600px){.template-blog>.wrapper header h1{font-size:25px}
+}.template-blog>.wrapper .date{margin:20px 0 0 0;font-size:18px}
+.template-blog>.wrapper .copy{margin:20px 0 0 0}
+.template-blog>.wrapper nav.pagination{margin:20px 0 0 0;text-align:center}
+@media screen and (min-width:600px){.template-blog>.wrapper nav.pagination{margin:4% 0 0 0}
+}.template-blog>.wrapper nav.pagination a{display:inline-block;border:1px solid #cfb669;color:#763b1d;background-color:white;padding:5px 10px;text-decoration:none;font-size:16px}
+@media screen and (min-width:600px){.template-blog>.wrapper nav.pagination a[rel=prev]{float:left}
+}.template-blog>.wrapper nav.pagination a[rel=next]{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-blog>.wrapper nav.pagination a[rel=next]{float:right;margin:0}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}

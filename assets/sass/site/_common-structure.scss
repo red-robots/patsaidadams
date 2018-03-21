@@ -16,10 +16,11 @@
 	}
   }
   .copy {
-	font-size: 14px;
+	font-size: 16px;
 	color: $color__text-main;
+	line-height: 1.6;
 	@media screen and (min-width: $tabwidth){
-	  font-size: 16px;
+	  font-size: 18px;
 	}
 	> *:first-child {
 	  margin-top: 0;
@@ -45,15 +46,20 @@
 	  }
 	}
 	h1, h2, h3 {
-	  margin: 0 0 10px 0;
-	  text-transform: uppercase;
-	  color: $color__text-main;
+	  margin: 0 0 20px 0;
+	  color: $color__psa-blue;
 	}
 	h1 {
-	  font-size: 30px;
+	  font-size: 25px;
+		@media screen and (min-width: $tabwidth){
+			font-size: 35px;
+		}
 	}
 	h2 {
-	  font-size: 25px;
+		font-size: 20px;
+		@media screen and (min-width: $tabwidth){
+			font-size: 25px;
+		}
 	}
 	h3 {
 	  font-size: 20px;
@@ -302,9 +308,12 @@ a.button {
 	background: linear-gradient(to right, $color__psa-gold, $color__psa-light-gold); /* Standard syntax */
 	color: white;
 	text-transform: uppercase;
-	font-size: 28px;
+	font-size: 20px;
 	padding: 10px 50px;
 	display: block;
 	text-decoration: none;
 	text-align: center;
+	@media screen and (min-width: $tabwidth){
+		font-size: 28px;
+	}
 }
