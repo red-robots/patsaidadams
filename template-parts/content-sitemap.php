@@ -16,6 +16,7 @@
         </header>
         <div class="copy">
             <?php the_content();?>
+            <?php wp_nav_menu( array( 'theme_location' => 'sitemap' ) ); ?>
         </div><!--.copy-->
     </div><!--.wrapper.cap-->
 </article><!-- #post-## -->

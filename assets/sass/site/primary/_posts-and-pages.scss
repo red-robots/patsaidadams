@@ -195,6 +195,8 @@
                 color: white;
                 font-size: 25px;
                 line-height: 2;
+                font-weight: 700;
+                font-style: italic;
                 @media screen and (min-width: $tabwidth){
                     font-size: 35px;
                     padding: 0 0 0 20%;
@@ -235,6 +237,7 @@
                     background-color: white;
                     padding: 15px 40px 5px 40px;
                     color: $color__psa-blue;
+                    font-family: $font__headings;
                     @media screen and (min-width: $tabwidth){
                         font-size: 25px;
                     }
@@ -279,7 +282,7 @@
     }
 }
 
-.template-blog {
+.template-blog, .template-page, .template-sitemap, .error-404 {
     >.wrapper {
         padding: 20px 0;
         @media screen and (min-width: $tabwidth){

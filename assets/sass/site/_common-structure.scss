@@ -64,21 +64,15 @@
 	h3 {
 	  font-size: 20px;
 	}
-	>ul, >ol {
+	ul, ol {
 	  padding: 0;
-	  margin: 0 0 20px 20px;
+	  margin: 0 0 20px 40px;
 	  font-size: inherit;
 	  li {
 			margin: 0;
 			font-size: inherit;
 			padding: 0;
-			list-style-type: none;
-			text-indent: -14px;
-			&:before {
-				content: "\25A0";
-				color: $color__text-main;
-				margin-right: 5px;
-			}
+			list-style-type: disc;
 			a {
 				cursor: pointer;
 				&:hover {
@@ -86,9 +80,14 @@
 				}
 			}
 			ul.sub-menu {
-				margin: 0;
+				margin: 0 0 0 40px;
 			}
-	  }
+	 	}
+	}
+	ol {
+		li {
+			list-style-type: decimal;
+		}
 	}
 }
 
@@ -278,6 +277,7 @@
 							margin-bottom: 0;
 						}
 						a {
+							font-family: $font__headings;
 							text-decoration: none;
 							font-size: 20px;
 							color: $color__psa-grey;
@@ -313,6 +313,7 @@ a.button {
 	display: block;
 	text-decoration: none;
 	text-align: center;
+	font-weight: 500;
 	@media screen and (min-width: $tabwidth){
 		font-size: 18px;
 		padding: 10px 20px;
