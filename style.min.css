@@ -925,6 +925,15 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 }.template-books>.wrapper>.row-2 article.book>.col-2 header{margin:0 0 15px 0}
 .template-books>.wrapper>.row-2 article.book>.col-2 header h2{margin:0;font-size:20px;color:#152e4e}
 @media screen and (min-width:600px){.template-books>.wrapper>.row-2 article.book>.col-2 header h2{font-size:25px}
+}.template-repeater>.wrapper{padding:20px 0}
+@media screen and (min-width:600px){.template-repeater>.wrapper{padding:4% 0}
+}.template-repeater>.wrapper .post{padding:0 0 20px 0;margin:0 0 20px 0;border-bottom:5px solid #e7eaee}
+@media screen and (min-width:600px){.template-repeater>.wrapper .post{padding:0 0 7% 0;margin:0 0 5% 0}
+}.template-repeater>.wrapper .post>.col-1{margin:0 auto;max-width:300px}
+@media screen and (min-width:600px){.template-repeater>.wrapper .post>.col-1{width:20%;float:left;margin:0;padding:0 30px 0 0}
+}.template-repeater>.wrapper .post>.col-1 img{width:100%;display:block}
+.template-repeater>.wrapper .post>.col-2{margin:20px 0 0 0}
+@media screen and (min-width:600px){.template-repeater>.wrapper .post>.col-2{width:80%;margin:0;float:left}
 }.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
