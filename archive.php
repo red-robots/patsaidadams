@@ -99,8 +99,19 @@ get_header(); ?>
 								</header>
 							<?php endif;?>
 							<ul>
-								<?php wp_get_archives();?>
+								<?php wp_get_archives(array('limit'=>12));?>
 							</ul>
+							<?php $limit = 0;
+							$current_year = date('Y');
+							$rows = $wpdb->get_results("SELECT DISTINCT YEAR( post_date ) AS year FROM $wpdb->posts WHERE post_status = 'publish' and post_date <= now( ) and post_type = 'post' ORDER BY post_date DESC");
+							if($rows):?>
+								<ul>
+									<?php foreach($rows as $row) :
+										if(strcmp($row->year,$current_year)===0) continue;?>
+										<li class="archive-year"><a href="<?php bloginfo('url') ?>/<?php echo $row->year; ?>/"><?php echo $row->year;?></a></li>
+									<?php endforeach;?>
+								</ul> 
+							<?php endif;?>
 						</div><!--.row-2-->
 					</aside><!--.col-2-->
 				</div><!--.wrapper-->

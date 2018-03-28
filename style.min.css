@@ -770,7 +770,7 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-3 #site-navigation>div ul li:last-child{border-right:0}
 #masthead>.row-3 #site-navigation>div ul li a{display:block;color:white;text-decoration:none;font-size:20px;text-transform:uppercase;padding:10px 20px}
 @media screen and (min-width:600px){#masthead>.row-3 #site-navigation>div ul li a{font-size:25px;padding:18px 30px}
-}#colophon{background-color:#152e4e;padding:20px 0}
+}#colophon{background-color:#466787;padding:20px 0}
 @media screen and (min-width:600px){#colophon{padding:3.5% 0 40px 0}
 }#colophon>.row-1>.wrapper{padding:0 0 20px 0}
 @media screen and (min-width:600px){#colophon>.row-1>.wrapper{padding:0 0 3.5% 0}
@@ -786,7 +786,7 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.row-2>.wrapper>.col-1 ul,#colophon>.row-2>.wrapper>.col-2 ul{margin:0;padding:0}
 #colophon>.row-2>.wrapper>.col-1 ul li,#colophon>.row-2>.wrapper>.col-2 ul li{display:block;list-style-type:none;margin:0 0 5px 0}
 #colophon>.row-2>.wrapper>.col-1 ul li:last-child,#colophon>.row-2>.wrapper>.col-2 ul li:last-child{margin-bottom:0}
-#colophon>.row-2>.wrapper>.col-1 ul li a,#colophon>.row-2>.wrapper>.col-2 ul li a{font-family:"Oswald",sans-serif;text-decoration:none;font-size:20px;color:gray}
+#colophon>.row-2>.wrapper>.col-1 ul li a,#colophon>.row-2>.wrapper>.col-2 ul li a{font-family:"Oswald",sans-serif;text-decoration:none;font-size:20px;color:#e7eaee}
 #colophon>.row-2>.wrapper>.col-3 header{margin:0 0 10px 0}
 #colophon>.row-2>.wrapper>.col-3 header h2{color:white;margin:0;font-weight:500;font-size:30px}
 #colophon>.row-2>.wrapper>.col-3 .copy{color:white;font-size:14px}

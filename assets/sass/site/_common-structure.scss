@@ -215,7 +215,7 @@
 }
 
 #colophon {
-	background-color: $color__psa-blue;
+	background-color: $color__psa-light-blue;
 	padding: 20px 0;
 	@media screen and (min-width: $tabwidth){
 		padding: 3.5% 0 40px 0;
@@ -285,7 +285,7 @@
 							font-family: $font__headings;
 							text-decoration: none;
 							font-size: 20px;
-							color: $color__psa-grey;
+							color: $color__psa-light-grey;
 						}
 					}
 				}
