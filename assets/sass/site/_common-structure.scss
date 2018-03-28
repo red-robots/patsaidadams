@@ -203,6 +203,9 @@
 							text-transform: uppercase;
 							padding: 10px 20px;
 							@media screen and (min-width: $tabwidth){
+								font-size: 18px;
+							}
+							@media screen and (min-width: $deskwidth){
 								font-size: 25px;
 								padding: 18px 30px;
 							}
