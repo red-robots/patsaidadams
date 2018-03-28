@@ -82,6 +82,23 @@
 					endif;?>
 				</div><!--.col-2-->
 				<div class="col-3 col">
+					<?php $footer_col_3_title = get_field("footer_col_3_title","option");
+					$footer_col_3_copy = get_field("footer_col_3_copy","option");
+					$footer_col_3_button_text = get_field("footer_col_3_button_text","option");
+					$footer_col_3_button_link = get_field("footer_col_3_button_link","option");
+					if($footer_col_3_title):?>
+						<header><h2><?php echo $footer_col_3_title;?></h2></header>
+					<?php endif;
+					if($footer_col_3_copy):?>
+						<div class="copy">
+							<?php echo $footer_col_3_copy;?>
+						</div><!--.copy-->
+					<?php endif;
+					if($footer_col_3_button_link&&$footer_col_3_button_text):?>
+						<a class="button" href="<?php echo $footer_col_3_button_link;?>">
+							<?php echo $footer_col_3_button_text;?>
+						</a>
+					<?php endif;?>
 				</div><!--.col-3-->
 			</div><!--.wrapper-->
 		</div><!--.row-2-->

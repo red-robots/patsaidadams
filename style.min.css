@@ -770,7 +770,7 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-3 #site-navigation>div ul li:last-child{border-right:0}
 #masthead>.row-3 #site-navigation>div ul li a{display:block;color:white;text-decoration:none;font-size:20px;text-transform:uppercase;padding:10px 20px}
 @media screen and (min-width:600px){#masthead>.row-3 #site-navigation>div ul li a{font-size:25px;padding:18px 30px}
-}#colophon{background-color:#466787;padding:20px 0}
+}#colophon{background-color:#152e4e;padding:20px 0}
 @media screen and (min-width:600px){#colophon{padding:3.5% 0 40px 0}
 }#colophon>.row-1>.wrapper{padding:0 0 20px 0}
 @media screen and (min-width:600px){#colophon>.row-1>.wrapper{padding:0 0 3.5% 0}
@@ -778,14 +778,19 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.row-1>.wrapper .social a{display:inline-block;color:white;text-decoration:none;margin:0 12px;font-size:30px}
 #colophon>.row-2>.wrapper{padding:0 0 20px 0}
 @media screen and (min-width:600px){#colophon>.row-2>.wrapper{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:0 0 5% 0}
-}#colophon>.row-2>.wrapper>.col{text-align:center}
-@media screen and (min-width:600px){#colophon>.row-2>.wrapper>.col{width:30%;min-height:1px;text-align:left}
-}#colophon>.row-2>.wrapper>.col-1 header,#colophon>.row-2>.wrapper>.col-2 header{margin:0 0 10px 0}
+}#colophon>.row-2>.wrapper>.col{text-align:center;margin:20px 0 0 0}
+@media screen and (min-width:600px){#colophon>.row-2>.wrapper>.col{width:30%;margin:0;min-height:1px;text-align:left}
+}#colophon>.row-2>.wrapper>.col:first-child{margin:0}
+#colophon>.row-2>.wrapper>.col-1 header,#colophon>.row-2>.wrapper>.col-2 header{margin:0 0 10px 0}
 #colophon>.row-2>.wrapper>.col-1 header h2,#colophon>.row-2>.wrapper>.col-2 header h2{color:white;margin:0;font-weight:500;font-size:30px}
 #colophon>.row-2>.wrapper>.col-1 ul,#colophon>.row-2>.wrapper>.col-2 ul{margin:0;padding:0}
 #colophon>.row-2>.wrapper>.col-1 ul li,#colophon>.row-2>.wrapper>.col-2 ul li{display:block;list-style-type:none;margin:0 0 5px 0}
 #colophon>.row-2>.wrapper>.col-1 ul li:last-child,#colophon>.row-2>.wrapper>.col-2 ul li:last-child{margin-bottom:0}
 #colophon>.row-2>.wrapper>.col-1 ul li a,#colophon>.row-2>.wrapper>.col-2 ul li a{font-family:"Oswald",sans-serif;text-decoration:none;font-size:20px;color:gray}
+#colophon>.row-2>.wrapper>.col-3 header{margin:0 0 10px 0}
+#colophon>.row-2>.wrapper>.col-3 header h2{color:white;margin:0;font-weight:500;font-size:30px}
+#colophon>.row-2>.wrapper>.col-3 .copy{color:white;font-size:14px}
+#colophon>.row-2>.wrapper>.col-3 a.button{margin:10px 0 0 0;padding:5px 30px;font-size:14px;display:inline-block}
 #colophon>.row-3>.wrapper{text-align:center;font-size:16px;color:white;padding:20px 0 0 0}
 a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb669);background:linear-gradient(to right,#ce8767,#cfb669);color:white;text-transform:uppercase;font-size:20px;padding:10px 50px;display:block;text-decoration:none;text-align:center;font-weight:500}
 @media screen and (min-width:600px){a.button{font-size:18px;padding:10px 20px}
