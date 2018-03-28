@@ -23,6 +23,7 @@
             <div class="row-2">
                 <?php while($query->have_posts()): $query->the_post();?>
                     <article class="book clear-bottom">
+                        <a name="<?php echo preg_replace('/[^0-9A-Za-z\-]/','',sanitize_title_with_dashes(get_the_title()));?>"></a>
                         <div class="col-1">
                             <?php $image = get_field("image");
                             if($image):?>

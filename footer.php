@@ -21,13 +21,13 @@
 					$youtube = get_field("youtube","option");
 					$email = get_field("email","option");
 					if($facebook):?>
-						<a href="<?php echo $facebook;?>"><i class="fa fa-facebook"></i></a>
+						<a href="<?php echo $facebook;?>" target="_blank"><i class="fa fa-facebook"></i></a>
 					<?php endif;
 					if($youtube):?>
-						<a href="<?php echo $youtube;?>"><i class="fa fa-youtube"></i></a>
+						<a href="<?php echo $youtube;?>" target="_blank"><i class="fa fa-youtube"></i></a>
 					<?php endif;
 					if($email):?>
-						<a href="mailto:<?php echo $email;?>"><i class="fa fa-envelope"></i></a>
+						<a href="mailto:<?php echo $email;?>" target="_blank"><i class="fa fa-envelope"></i></a>
 					<?php endif;?>
 				</div><!--.social-->
 			</div><!--.wrapper-->

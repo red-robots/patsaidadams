@@ -119,6 +119,7 @@
         </div><!-- wrapper -->
         <?php $books = get_field("books");
         if($books):?>
+            <a name="books-media"></a>
             <ul class='tabs clear-bottom'>
                 <?php foreach($books as $book):?>
                     <li><a href='#<?php echo strtolower(preg_replace('/[^0-9a-zA-Z\-]/','',sanitize_title_with_dashes($book->post_title)));?>'><?php echo $book->post_title;?></a></li>
@@ -147,7 +148,7 @@
                             <?php endif;?>
                         </div><!--.col-1-->
                         <div class="col-2 copy">
-                            <?php the_content();?>
+                            <?php the_excerpt();?>
                         </div><!--.col-2-->
                     </div>
                 <?php endforeach;
