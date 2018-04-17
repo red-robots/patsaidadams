@@ -19,6 +19,7 @@
         </div><!--.date-->
         <div class="copy">
             <?php the_content();?>
+            <?php comments_template();?>
         </div><!--.copy-->
         <?php if(get_previous_post_link()||get_next_post_link()):?>
             <nav class="pagination clear-bottom">

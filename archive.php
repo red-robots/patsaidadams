@@ -78,22 +78,37 @@ get_header(); ?>
 							<?php echo get_search_form();?>
 							<?php $categories_title = get_field("categories_title","option");
 							$archives_title = get_field("archives_title","option");
-							if($categories_title):?>
-								<header>
-									<h2><?php echo $categories_title;?></h2>
-								</header>
-							<?php endif;
-							$cats = get_categories();
-							if($cats):?>
+							$terms = get_terms(array(
+								'taxonomy' => 'main',
+								'hide_empty' => true,
+							));
+							if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):?>
 								<ul>
-									<?php foreach($cats as $cat):?>
+									<?php foreach($terms as $term):?>
 										<li>
-											<a href="<?php echo get_term_link($cat->term_id);?>"><?php echo $cat->name;?></a>
+											<a href="<?php echo get_term_link($term->term_id);?>"><?php echo $term->name;?></a>
 										</li>
 									<?php endforeach;?>
 								</ul>
 							<?php endif;
-							if($archives_title):?>
+							if($categories_title):?>
+								<header>
+									<h2><?php echo $categories_title;?></h2>
+								</header>
+							<?php endif;?>
+							<?php wp_dropdown_categories();?>
+							<script type="text/javascript">
+								var dropdown = document.getElementById("cat");
+								if(dropdown){
+									function onCatChange() {
+										if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+											location.href = "<?php echo esc_url( home_url( '/' ) ); ?>?cat="+dropdown.options[dropdown.selectedIndex].value;
+										}
+									}
+									dropdown.onchange = onCatChange;
+								}
+							</script>
+							<?php if($archives_title):?>
 								<header>
 									<h2><?php echo $archives_title;?></h2>
 								</header>

@@ -126,7 +126,7 @@ to{-webkit-transform:none;transform:none}
 44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}
 55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}
 66.6%{-webkit-transform:skewX(-0.78125deg) skewY(-0.78125deg);transform:skewX(-0.78125deg) skewY(-0.78125deg)}
-77.7%{-webkit-transform:skewX(0.39062deg) skewY(0.39062deg);transform:skewX(0.39062deg) skewY(0.39062deg)}
+77.7%{-webkit-transform:skewX(0.39063deg) skewY(0.39063deg);transform:skewX(0.39063deg) skewY(0.39063deg)}
 88.8%{-webkit-transform:skewX(-0.19531deg) skewY(-0.19531deg);transform:skewX(-0.19531deg) skewY(-0.19531deg)}
 }@keyframes jello{from,11.1%,to{-webkit-transform:none;transform:none}
 22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}
@@ -134,7 +134,7 @@ to{-webkit-transform:none;transform:none}
 44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}
 55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}
 66.6%{-webkit-transform:skewX(-0.78125deg) skewY(-0.78125deg);transform:skewX(-0.78125deg) skewY(-0.78125deg)}
-77.7%{-webkit-transform:skewX(0.39062deg) skewY(0.39062deg);transform:skewX(0.39062deg) skewY(0.39062deg)}
+77.7%{-webkit-transform:skewX(0.39063deg) skewY(0.39063deg);transform:skewX(0.39063deg) skewY(0.39063deg)}
 88.8%{-webkit-transform:skewX(-0.19531deg) skewY(-0.19531deg);transform:skewX(-0.19531deg) skewY(-0.19531deg)}
 }.jello{-webkit-animation-name:jello;animation-name:jello;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center}
 @-webkit-keyframes bounceIn{from,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(0.215,0.61,0.355,1);animation-timing-function:cubic-bezier(0.215,0.61,0.355,1)}
@@ -628,7 +628,7 @@ a:focus{outline:thin dotted}
 a:hover,a:active{outline:0}
 .navigation{width:100%;margin:0}
 .navigation ul{margin:0;padding:0}
-.navigation li{margin:0;display:inline-block;list-style:none}
+.navigation li{margin:10px 0 0 0;display:inline-block;list-style:none}
 .navigation a{display:block}
 .navigation li a,.navigation li a:hover,.navigation li.active a,.navigation li.disabled{color:#fff;text-decoration:none}
 .navigation li a,.navigation li a:hover,.navigation li.active a,.navigation li.disabled{background-color:#cfb669;border-radius:3px;cursor:pointer;padding:12px;padding:.75rem;-webkit-transition:.3s ease all;transition:.3s ease all}
@@ -744,6 +744,14 @@ html[xmlns] .flexslider .slides{display:block}
 .copy ul li a:hover,.copy ol li a:hover{color:black}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0 0 0 40px}
 .copy ol li{list-style-type:decimal}
+.copy #comments ol{margin:0;padding:0}
+.copy #comments ol li{list-style-type:none;background-color:#e7eaee;margin:0 0 20px 0;padding:20px;font-size:16px}
+.copy #comments ol li:last-child{margin:0}
+.copy #comments .comment-content>*:first-child{margin-top:0;padding-top:0}
+.copy #comments .comment-content>*:last-child{margin-bottom:0;padding-bottom:0}
+.copy #comments #respond{margin:20px 0 0 0}
+.copy #comments input{max-width:100%}
+.copy #comments #submit{color:white;background-color:#466787;border-radius:3px;text-shadow:none;box-shadow:none;text-transform:uppercase;border:0;font-size:18px;padding:15px}
 #masthead>.row-1{background-size:cover;background-position:center}
 #masthead>.row-1>.wrapper{padding:10px 0}
 #masthead>.row-1>.wrapper .social{text-align:center}
@@ -870,7 +878,7 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 }.template-blog>.wrapper nav.pagination .button-wrapper a,.template-page>.wrapper nav.pagination .button-wrapper a,.template-sitemap>.wrapper nav.pagination .button-wrapper a,.error-404>.wrapper nav.pagination .button-wrapper a{display:block;color:#763b1d;background-color:white;padding:5px 10px;text-decoration:none;font-size:16px}
 .template-category>.wrapper{padding:20px 0}
 @media screen and (min-width:600px){.template-category>.wrapper{padding:4% 0}
-}@media screen and (min-width:600px){.template-category>.wrapper>.col-1{float:left;width:58%}
+}@media screen and (min-width:600px){.template-category>.wrapper>.col-1{float:left;width:58%;min-height:1px}
 }.template-category>.wrapper>.col-1>.wrapper .post{padding:0 0 20px 0;margin:0 0 20px 0;border-bottom:5px solid #e7eaee}
 @media screen and (min-width:600px){.template-category>.wrapper>.col-1>.wrapper .post{padding:0 0 7% 0;margin:0 0 5% 0}
 }.template-category>.wrapper>.col-1>.wrapper .post header{margin:0 0 15px 0}
@@ -883,7 +891,7 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 .template-category>.wrapper>.col-1>.wrapper .post>.wrapper>.col-2>.wrapper{margin:20px 0 0 0;text-align:right}
 .template-category>.wrapper>.col-1>.wrapper .post>.wrapper>.col-2>.wrapper a{font-size:18px;padding:5px 25px;display:inline-block}
 .template-category>.wrapper>.col-2{margin:20px 0 0 0}
-@media screen and (min-width:600px){.template-category>.wrapper>.col-2{float:left;width:42%;margin:0;padding:0 0 0 9%}
+@media screen and (min-width:600px){.template-category>.wrapper>.col-2{float:left;width:42%;margin:0;padding:0 0 0 9%;min-height:1px}
 }.template-category>.wrapper>.col-2>.row-1{margin:0 0 20px 0;background:#152e4e;background:-webkit-linear-gradient(left,#152e4e,#466787);background:linear-gradient(to right,#152e4e,#466787);padding:10px}
 @media screen and (min-width:600px){.template-category>.wrapper>.col-2>.row-1{margin:0 0 15% 0}
 }.template-category>.wrapper>.col-2>.row-1>.wrapper{display:block;background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb669);background:linear-gradient(to right,#ce8767,#cfb669);padding:1px}
@@ -905,6 +913,8 @@ a.button{background:#ce8767;background:-webkit-linear-gradient(left,#ce8767,#cfb
 .template-category>.wrapper>.col-2>.row-2 header{margin:0 0 20px 0}
 .template-category>.wrapper>.col-2>.row-2 header h2{margin:0;font-size:20px;color:#152e4e}
 @media screen and (min-width:600px){.template-category>.wrapper>.col-2>.row-2 header h2{font-size:25px}
+}.template-category>.wrapper>.col-2>.row-2>select{margin:0 0 20px 0}
+@media screen and (min-width:600px){.template-category>.wrapper>.col-2>.row-2>select{margin:0 0 15% 0}
 }.template-category>.wrapper>.col-2>.row-2>ul{margin:0 0 20px 0;padding:0}
 @media screen and (min-width:600px){.template-category>.wrapper>.col-2>.row-2>ul{margin:0 0 15% 0}
 }.template-category>.wrapper>.col-2>.row-2>ul li{list-style-type:none;display:block}

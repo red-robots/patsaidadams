@@ -89,6 +89,49 @@
 			list-style-type: decimal;
 		}
 	}
+	#comments {
+		ol {
+			margin: 0;
+			padding: 0;
+			li {
+				list-style-type: none;
+				background-color: $color__psa-light-grey;
+				margin: 0 0 20px 0;
+				padding: 20px;
+				font-size: 16px;
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+		.comment-content >* {
+			&:first-child {
+				margin-top: 0;
+				padding-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+		#respond {
+			margin: 20px 0 0 0;
+		}
+		input {
+			max-width: 100%;
+		}
+		#submit {
+			color: white;
+			background-color: $color__psa-light-blue;
+			border-radius: 3px;
+			text-shadow: none;
+			box-shadow: none;
+			text-transform: uppercase;
+			border: none;
+			font-size: 18px;
+			padding: 15px;
+		}
+	}
 }
 
 #masthead {
