@@ -46,7 +46,26 @@
                                     <?php if($read_more_text):?>
                                         <div class="wrapper">
                                             <a class="button" href="<?php echo get_the_permalink();?>">
-                                                <?php echo $read_more_text;?>
+                                                <?php $terms = get_the_terms(get_the_ID(),'main');
+                                                if(!is_wp_error($terms)&&is_array($terms)&&!empty($terms)):
+                                                    $found = false;
+                                                    foreach($terms as $term):
+                                                        if($term->term_id==340)://video from main tax
+                                                            echo "View";
+                                                            $found = true;
+                                                            break;
+                                                        elseif($term->term_id==341)://audio from main tax
+                                                            echo "Listen";
+                                                            $found = true;
+                                                            break;
+                                                        endif;
+                                                    endforeach;
+                                                    if(!$found):
+                                                        echo $read_more_text;
+                                                    endif;
+                                                else:
+                                                    echo $read_more_text;
+                                                endif;?>
                                             </a><!--.button-->
                                         </div><!--.wrapper-->
                                     <?php endif;?>
