@@ -17,7 +17,11 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php wp_head(); ?>
+<?php wp_head(); 
+
+$banner = get_field('header_banner_image', 'option');
+
+?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,8 +29,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="row-1" style="background-image: url(<?php echo get_template_directory_uri()."/images/water-2.jpg";?>)">
+		<div class="row-1" style="background-image: url(<?php echo $banner['url'];?>)">
 			<div class="wrapper cap">
+
+			<div class="deep-link">
+				<a href="https://deepeningyourfaith.com/" target="_blank">Deepening Your Faith</a>
+			</div>
+
 				<div class="social">
 					<?php $facebook = get_field("facebook","option");
 					$youtube = get_field("youtube","option");

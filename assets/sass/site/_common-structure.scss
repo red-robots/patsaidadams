@@ -3,9 +3,30 @@
 	padding-right: 20px !important;
 	padding-left: 20px !important;
 	margin: 0 auto;
+	// height: 60px;
 	@media screen and (min-width: $midwidth){
 		padding-right: 8% !important;
 		padding-left: 8% !important;
+	}
+}
+.deep-link {
+	width: auto;
+	display: inline-block;
+	margin: 15px auto;
+	a {
+		background-color: $color__psa-blue;
+		color: #fff;
+		padding: 10px 25px;
+		text-decoration: none;
+		transform: scale(1);
+		@include transition(all eased .3s);
+		&:hover {
+			padding: 15px 25px;
+		}
+	}
+	@media screen and (min-width: $tabwidth){
+		float: left;
+		margin: 8px 0 0 0;
 	}
 }
 .clear-bottom {
@@ -138,12 +159,20 @@
 	>.row-1 {
 		background-size: cover;
 		background-position: center;
+		height: 120px;
+		text-align: center;
+		@media screen and (min-width: $tabwidth){
+			height: 60px;
+		}
 		>.wrapper {
 			padding: 10px 0;
 			.social {
+				width: auto;
+				
 				text-align: center;
 				@media screen and (min-width: $tabwidth){
 					text-align: right;
+					float: right;
 				}
 				&:last-child {
 					margin-right: 0;
