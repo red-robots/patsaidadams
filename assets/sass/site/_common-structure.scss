@@ -29,6 +29,15 @@
 		margin: 8px 0 0 0;
 	}
 }
+.intro {
+	width: 100%;
+	overflow:hidden;
+	padding: 20px 0;
+	@media screen and (min-width: $deskwidth){
+		width: 70%;
+		margin: 0 auto 60px auto;
+	}
+}
 .clear-bottom {
 	&:after {
 	  clear: both;

@@ -11,6 +11,11 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class("template-repeater"); ?>>
     <div class="wrapper cap">
+
+    <div class="intro copy">
+        <?php the_content(); ?>
+    </div>
+
         <?php $list = get_field("list");
         if ( $list ) : ?>
             <?php /* Start the Loop */

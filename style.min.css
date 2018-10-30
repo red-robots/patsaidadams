@@ -727,6 +727,8 @@ html[xmlns] .flexslider .slides{display:block}
 .deep-link a{background-color:#152e4e;color:#fff;padding:10px 25px;text-decoration:none;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all eased .3s;transition:all eased .3s}
 .deep-link a:hover{padding:15px 25px}
 @media screen and (min-width:600px){.deep-link{float:left;margin:8px 0 0 0}
+}.intro{width:100%;overflow:hidden;padding:20px 0}
+@media screen and (min-width:1200px){.intro{width:70%;margin:0 auto 60px auto}
 }.clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:16px;color:black;line-height:1.6}
 @media screen and (min-width:600px){.copy{font-size:18px}
