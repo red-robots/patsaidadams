@@ -19,13 +19,12 @@
                 'orderby'=>'date',
                 'order'=>'DESC',
                 'tax_query' => array(
-                    array(
-                        'taxonomy' => 'category', // your custom taxonomy
-                        'field' => 'slug',
-                        'terms' => array( 'church-and-state' ), // the terms (categories) you created
-                        'operator' => 'NOT IN'
-                    )
-                )
+					array(
+						'taxonomy' => 'category', // your custom taxonomy
+						'field' => 'slug',
+						'terms' => array( 'church-and-state' ) // the terms (categories) you created
+					)
+				)
             );
             $query = new WP_Query($args);
             if ( $query->have_posts() ) : 
